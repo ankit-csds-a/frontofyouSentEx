@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouSentEX</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 40px; /* For spacing above the footer */
+        }
+
+        .left-side {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .left-side img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .right-side {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .right-side h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .right-side input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .right-side button {
+            padding: 10px 20px;
+            background-color: #FF0000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .right-side button:hover {
+            background-color: #cc0000;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Adjust body height to leave space for the footer */
+        body {
+            min-height: 100vh;
+            padding-bottom: 40px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        
+        <!-- YouSentEX logo -->
+        <img src="logo.png" alt="YouSentEX Logo">
+    </div>
+
+    <div class="container">
+        <!-- Left side with YouTube logo -->
+        <div class="left-side">
+            <img src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg" alt="YouTube Logo">
+        </div>
+
+        <!-- Right side with input box and button -->
+        <div class="right-side">
+            <h1>Enter the YouTube Link</h1>
+            <input type="text" placeholder="Paste your YouTube link here">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <p>© 2024 YouSentEX. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
